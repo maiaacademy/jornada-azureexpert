@@ -1,4 +1,7 @@
-## Azure Expert - Mod 07 - Aula 08 
+## Jornada Azure Expert
+
+Hands-on Lab
+
 ## Deploy the On-premises environment on Hyper-V (60 minutes)
 
 ## Requirements
@@ -69,23 +72,4 @@ For simplicity, there is no redundancy in any of the tiers.
 
 ![A slide shows the on-premises SmartHotel application architecture.](/Mod07-AllFiles/Images/overview.png)
 
-## Azure Expert - Mod 07 - Aula 09
-# Deploy the VMs environment on Azure (30 minutes)
-
-1. Deploy the template **RG-TAE-PartsUnlimited** to a new resource group. This template deploy a virtual machine with Application and Database.
-
-2. You can deploy the template by selecting the 'Deploy to Azure' button below. You will need to create a new resource group **RG-TAE-PartsUnlimited**. You will also need to select a location **Central US** close to you to deploy the template to. Then choose **Review + create** followed by **Create**.
-
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmaiaacademy%2FAppService-Migration-Assistant%2Fmain%2Ftemplate.json)
-
-     > **Note:** The template will take around 6-7 minutes to deploy. Once template deployment is complete, several additional scripts are executed to bootstrap the lab environment. **Allow at least 1 hour from the start of template deployment for the scripts to run.**
-
-1. In the Azure portal, select the Virtual machines icon, after selecting More services. You should see a single VM named **webvm** listed.
-
-2. Make a note of the public IP address.
-
-3. Open a browser tab and navigate to **http://webvm-IP-Address>**. You should see the Parts Unlimited application, which is running on VM.
-
-   ![Screenshot of the Application on Azure VM](/Mod07-AllFiles/Images/partsunlimited.png)
-
-1. Continue in the **Treinamento Azure Expert**.
+1. Continue in the **Jornada Azure Expert**.
