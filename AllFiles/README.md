@@ -4,34 +4,6 @@ Hands-on Lab
 
 ## Deploy the On-premises environment on Hyper-V (60 minutes)
 
-## Requirements
-
-1. You will need Owner or Contributor permissions for an Azure subscription to use in the lab.
-
-2. Your subscription must have sufficient unused quota to deploy the VMs used in this lab. To check your quota:
-
-    - Log in to the [Azure portal](https://portal.azure.com), select **All services** then **Subscriptions**. Select your subscription, then choose **Usage + quotas**.
-  
-    - From the **Select a provider** drop-down, select **Microsoft.Compute**.
-  
-    - From the **All service quotas** drop down, select **Standard DSv3 Family vCPUs**, **Standard FSv2 Family vCPUs** and **Total Regional vCPUs**.
-  
-    - From the **All locations** drop down, select the location where you will deploy the lab.
-  
-    - From the last drop-down, select **Show all**.
-  
-    - Check that the selected quotas have sufficient unused capacity:
-  
-        - Standard DSv3 Family vCPUs: **at least 8 vCPUs**.
-  
-        - Standard FSv2 Family vCPUs: **at least 6 vCPUs**.
-
-        - Total Regional vCPUs: **at least 14 vCPUs**.
-
-    > **Note:** If you are using an Azure Pass subscription, you may not meet the vCPU quotas above. In this case, you can still complete the lab.
-
-## Deploy the on-premises environment
-
 1. Deploy the template **SmartHotelHost.json** to a new resource group. This template deploys a virtual machine running nested Hyper-V, with 4 nested VMs. This comprises the 'on-premises' environment which you will assess and migrate during this lab.
 
     You can deploy the template by selecting the 'Deploy to Azure' button below. You will need to create a new resource group **RG-JAE-Onpremises**. You will also need to select a location **East US 2 or other** close to you to deploy the template to. Then choose **Review + create** followed by **Create**. 
