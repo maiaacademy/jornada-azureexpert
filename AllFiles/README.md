@@ -1,6 +1,6 @@
 ## Jornada Azure Expert
 
-Hands-on Lab
+Hands-on
 
 ## Deploy the On-premises environment on Hyper-V (60 minutes)
 
