@@ -86,13 +86,16 @@ Hands-on Lab
 4. Select the **plus** button on the **Backend pools** box to begin adding endpoints to the backend pool. On the **Add a backend pool** pane, enter the following value, then select the **Add a backend** link.
 
     - **Name**: `PUPool`
-    - **Health Probes - Protocol**: HTTPS
 
 5. On the **Add a backend** pane, enter the following values (leave others as defaults), then select **Add**:
 
-    - **Backend host type**: Public IP Address
-    - **Backend host name**: ContosoWebLBPrimaryIP
-    - **Backend host header**: Paste in the DNS name for the **ContosoWebLBPrimaryIP** Public IP Address (in the **RG-PU-App** resource group).
+    - **Backend host type**: App Service
+    - **Backend host name**: puwebafd####
+    - **Backend host header**: puwebafd####
+
+7. Select **Add** to add the backend pool.
+
+    - **Health Probes - Protocol**: HTTPs
 
 7. Select **Add** to create the backend pool.
 
@@ -110,8 +113,6 @@ Hands-on Lab
     > **Note:** If you get a "Our services aren't available right now" error (or a 404-type error) accessing the web application, then continue on with the lab and come back to this later. Sometime this can take a ~10 minutes for the routing rules to publish before it's "live".
 
 ## Exercise #03 - Autoscale Application (30 minutes)
-
-Configure and test autoscaling of the Azure Web app
 
 1. Open the Azure portal on a new tab on your local computer. Select **App Service** from the home page. From the list of deployed services, select the one that matches the name that you created earlier.
 
