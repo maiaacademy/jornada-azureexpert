@@ -38,7 +38,7 @@ Projeto Hands-on Lab
 
 ## Migration to Azure App Service (20 minutes)
 
-1. On the remote VM's desktop, double-click the icon to open the **Azure App Service Migration Assistant**. The user interface then lists the Migration Assistant's steps with the first step highlighted, **Choose a site.** In the main area, the Migration Assistant informs that it found one site to assess.
+1. On the remote **webVM** desktop, double-click the icon to open the **Azure App Service Migration Assistant**. The user interface then lists the Migration Assistant's steps with the first step highlighted, **Choose a site.** In the main area, the Migration Assistant informs that it found one site to assess.
 
 1. Select the **Default Web Site** option.
 
