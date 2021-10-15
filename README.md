@@ -14,7 +14,7 @@ Hands-on Lab
 
 ![A slide shows the Parts Unlimited Architecture](/AllFiles/Images/architecture-partsunlimited.png)
 
-## Deploy Application (30 minutes)
+## Deploy Application (20 minutes)
 
 1. Deploy the template **Template.json** to a new resource group. This template deploy a virtual machine with Application and Database.
 
@@ -35,6 +35,8 @@ Hands-on Lab
 1. Open the **webVM.rdp file**. You'll be prompted for the VM's security credentials in the Windows Security dialog box. Select Use a different account. Copy and paste the username and password from step 1 into the dialog box, and select OK.
 
 1. On the remote desktop, open Internet Explorer, and go to http://localhost. Confirm that the Parts Unlimited website is successfully running. This site is hosted in IIS in the virtual machine, and connects to an Azure SQL database. Over the course of this exercise, you'll perform a migration assessment on this site and then migrate it to App Service.
+
+## Migration to Azure App Service (20 minutes)
 
 1. On the remote VM's desktop, double-click the icon to open the **Azure App Service Migration Assistant**. The user interface then lists the Migration Assistant's steps with the first step highlighted, **Choose a site.** In the main area, the Migration Assistant informs that it found one site to assess.
 
