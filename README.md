@@ -4,13 +4,19 @@ Participe da **Jornada Azure Expert de 11 a 18 de outubro**, evento ONLINE e gra
 
 Hands-on Lab
 
-# Projeto Implantação 100% prática de uma Aplicação em Alta disponibilidade e Escalável no Azure
+# Projeto - Implantação 100% prática de uma Aplicação em Alta disponibilidade e Escalável no Azure
+
+## Parts Unlimited Online Auto Parts
 
 ![A slide shows the Parts Unlimited](/AllFiles/Images/partsunlimited.png)
 
+## Application Archicture
+
+![A slide shows the Parts Unlimited Architecture](/AllFiles/Images/architecture-partsunlimited.png)
+
 1. Deploy the template **Template.json** to a new resource group. This template deploy a virtual machine with Application and Database.
 
-2. You can deploy the template by selecting the 'Deploy to Azure' button below. You will need to create a new resource group **RG-PU**. You will also need to select a location **East US** close to you to deploy the template to. Then choose **Review + create** followed by **Create**. 
+2. You can deploy the template by selecting the 'Deploy to Azure' button below. You will need to create a new resource group **RG-PU-App**. You will also need to select a location **East US** close to you to deploy the template to. Then choose **Review + create** followed by **Create**. 
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmaiaacademy%2Fjornada-azureexpert%2Fmain%2FAllFiles%2FTemplates%2Ftemplate.json)
 
@@ -43,3 +49,20 @@ Hands-on Lab
 1. On your local computer, select Next. Sign in by using the same account that you used to sign in to Azure.
 
 1. Back in the **Migration Assistant** running in the remote VM, the step Azure Options is displayed. Here you'll enter details about the target App Service instance to which you'll move your app.
+
+1. Use the following table to make your selections:
+
+    | Field | Value |
+    | --- | ---|
+    | Resource Group | Select the **Use exiting option** |
+    | Destination Site Name | Enter a valid name for the destination site |
+    | App Service Plan | Select the **Use exiting option**
+    | Azure Migrate Project | **Leave this field empty**
+
+1. **Select Migrate.** The Migration in Progress screen displays the current status of the migration.
+
+1. After the migration is complete, you'll continue to the **Migration Results** step.
+
+1. Open the Azure portal on a new tab on your local computer.Select **App Service** from the home page. From the list of deployed services, select the one that matches the name that you created earlier. This will display the settings for your new App Service account.
+
+1. Select the **Browse** button at the top of the overview page to browse to your migrated site running in Azure.
