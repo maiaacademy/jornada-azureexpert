@@ -129,13 +129,13 @@ Hands-on Lab
     | Setting | Value |
     | --- |--- |
     | Metric source | **Current resource** |
-    | Time aggregation | **Maximum** |
+    | Time aggregation | **Average* |
     | Metric namespace | **App Service plans standard metrics** |
     | Metric name | **CPU Percentage** |
     | Operator | **Greater than** |
     | Metric threshold to trigger scale action | **10** |
     | Duration (in minutes) | **5** |
-    | Time grain statistic | **Maximum** |
+    | Time grain statistic | **Average** |
     | Operation | **Increase count by** |
     | Instance count | **1** |
     | Cool down (minutes) | **10** |
@@ -145,13 +145,13 @@ Hands-on Lab
     | Setting | Value |
     | --- |--- |
     | Metric source | **Current resource** |
-    | Time aggregation | **Maximum** |
+    | Time aggregation | **Average** |
     | Metric namespace | **App Service plans standard metrics** |
     | Metric name | **CPU Percentage** |
     | Operator | **Less than** |
     | Metric threshold to trigger scale action | **5** |
     | Duration (in minutes) | **5** |
-    | Time grain statistic | **Maximum** |
+    | Time grain statistic | **Average** |
     | Operation | **Decrease count by** |
     | Instance count | **1** |
     | Cool down (minutes) | **10** |
