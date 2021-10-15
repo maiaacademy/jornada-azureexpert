@@ -189,3 +189,13 @@ Hands-on Lab
 1. Once you notice that the number of instances has increased to 2, reopen the Cloud Shell pane and terminate the script by pressing **Ctrl+C**.
 
 1. Close the Cloud Shell pane.
+
+### Delete the Hands-on Lab resources
+
+1.  Within the Azure portal, select Resource Groups on the left navigation.
+
+3.  Delete each of the resource groups created in this lab by selecting them followed by the **Delete resource group** button. You will need to confirm the name of the resource group to delete.
+
+You should follow all steps provided *after* attending the hands-on lab.
+
+Continue in the **Treinamento Azure Expert**.
