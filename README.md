@@ -133,7 +133,7 @@ Projeto Hands-on Lab
     | Setting | Value |
     | --- |--- |
     | Metric source | **Current resource** |
-    | Time aggregation | **Average* |
+    | Time aggregation | **Average** |
     | Metric namespace | **App Service plans standard metrics** |
     | Metric name | **CPU Percentage** |
     | Operator | **Greater than** |
