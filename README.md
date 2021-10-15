@@ -6,7 +6,7 @@ Hands-on Lab
 
 # Projeto - Implantação 100% prática de uma Aplicação em Alta disponibilidade e Escalável no Azure
 
-## Exercise #01 - Deploy Application (30 minutes)
+## Deploy Application (30 minutes)
 ## Parts Unlimited Online Auto Parts
 
 ![A slide shows the Parts Unlimited](/AllFiles/Images/partsunlimited.png)
@@ -68,7 +68,7 @@ Hands-on Lab
 
 1. Select the **Browse** button at the top of the overview page to browse to your migrated site running in Azure.
 
-# Exercise #02 - Deploy Azure Front Door (30 minutes)
+## Deploy Azure Front Door (30 minutes)
 
 1. From the Azure portal, select **+Create a resource**, then search for and select **Front Door**. Select **Create**. 
 
@@ -112,7 +112,7 @@ Hands-on Lab
 
     > **Note:** If you get a "Our services aren't available right now" error (or a 404-type error) accessing the web application, then continue on with the lab and come back to this later. Sometime this can take a ~10 minutes for the routing rules to publish before it's "live".
 
-## Exercise #03 - Autoscale Application (30 minutes)
+## Autoscale Azure App Service (30 minutes)
 
 1. Open the Azure portal on a new tab on your local computer. Select **App Service** from the home page. From the list of deployed services, select the one that matches the name that you created earlier.
 
