@@ -102,7 +102,7 @@ Hands-on Lab
 8. Select the **plus** button on the **Routing rules** box. On the **Add a rule** pane, enter the following values (leave others as defaults), then select **Add**.
 
     - **Name**: `PURule`
-    - **Accepted protocol**: HTTPs only
+    - **Accepted protocol**: HTTP / HTTPs
     - **Backend pool**: PUPool
     - **Forwarding protocol**: HTTPs Only
 
@@ -134,11 +134,27 @@ Hands-on Lab
     | Metric name | **CPU Percentage** |
     | Operator | **Greater than** |
     | Metric threshold to trigger scale action | **10** |
-    | Duration (in minutes) | **1** |
+    | Duration (in minutes) | **5** |
     | Time grain statistic | **Maximum** |
     | Operation | **Increase count by** |
     | Instance count | **1** |
-    | Cool down (minutes) | **5** |
+    | Cool down (minutes) | **10** |
+    
+1. Select **++ Add a rule**
+
+    | Setting | Value |
+    | --- |--- |
+    | Metric source | **Current resource** |
+    | Time aggregation | **Maximum** |
+    | Metric namespace | **App Service plans standard metrics** |
+    | Metric name | **CPU Percentage** |
+    | Operator | **Less than** |
+    | Metric threshold to trigger scale action | **5** |
+    | Duration (in minutes) | **5** |
+    | Time grain statistic | **Maximum** |
+    | Operation | **Decrease count by** |
+    | Instance count | **1** |
+    | Cool down (minutes) | **10** |
 
     >**Note**: Obviously these values do not represent a realistic configuration, since their purpose is to trigger autoscaling as soon as possible, without extended wait period.
 
@@ -147,7 +163,7 @@ Hands-on Lab
     | Setting | Value |
     | --- |--- |
     | Instance limits Minimum | **1** |
-    | Instance limits Maximum | **2** |
+    | Instance limits Maximum | **3** |
     | Instance limits Default | **1** |
 
 1. Click **Save**.
@@ -159,7 +175,7 @@ Hands-on Lab
 1. From the Cloud Shell pane, run the following to start and infinite loop that sends the HTTP requests to the web app:
 
    ```powershell
-   while ($true) { Invoke-WebRequest -Uri URLAPPSERVICE }
+   while ($true) { Invoke-WebRequest -Uri URLFRONTDOOR }
    ```
 
 1. Minimize the Cloud Shell pane (but do not close it) and, on the web app blade, in the **Monitoring** section, click **Process explorer**.
