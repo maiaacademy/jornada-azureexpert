@@ -2,9 +2,9 @@
 
 Participe da **Jornada Azure Expert de 11 a 18 de outubro**, evento ONLINE e gratuito: https://guilhermemaia.com/jornada
 
-Hands-on Lab
+Projeto Hands-on Lab
 
-## Projeto: Implantação 100% prática de Aplicação em Alta disponibilidade e Escalável no Azure
+## Implantação 100% prática de Aplicação em Alta disponibilidade e Escalável no Azure
 
 ## Parts Unlimited Online Auto Parts
 
