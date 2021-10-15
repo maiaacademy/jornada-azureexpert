@@ -4,7 +4,7 @@ Participe da **Jornada Azure Expert de 11 a 18 de outubro**, evento ONLINE e gra
 
 Hands-on Lab
 
-# Projeto - Implantação 100% prática de uma Aplicação em Alta disponibilidade e Escalável no Azure
+## Projeto - Implantação 100% prática de uma Aplicação em Alta disponibilidade e Escalável no Azure
 
 ## Parts Unlimited Online Auto Parts
 
