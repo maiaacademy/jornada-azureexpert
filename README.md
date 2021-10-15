@@ -6,7 +6,6 @@ Hands-on Lab
 
 # Projeto - Implantação 100% prática de uma Aplicação em Alta disponibilidade e Escalável no Azure
 
-## Deploy Application (30 minutes)
 ## Parts Unlimited Online Auto Parts
 
 ![A slide shows the Parts Unlimited](/AllFiles/Images/partsunlimited.png)
@@ -14,6 +13,8 @@ Hands-on Lab
 ## Application Archicture
 
 ![A slide shows the Parts Unlimited Architecture](/AllFiles/Images/architecture-partsunlimited.png)
+
+## Deploy Application (30 minutes)
 
 1. Deploy the template **Template.json** to a new resource group. This template deploy a virtual machine with Application and Database.
 
