@@ -17,7 +17,7 @@ Hands-on Lab
 
 1. Deploy the template **Template.json** to a new resource group. This template deploy a virtual machine with Application and Database.
 
-2. You can deploy the template by selecting the 'Deploy to Azure' button below. You will need to create a new resource group **RG-PU-App**. You will also need to select a location **East US** close to you to deploy the template to. Then choose **Review + create** followed by **Create**. 
+2. You can deploy the template by selecting the 'Deploy to Azure' button below. You will need to create a new resource group **RG-PU-App**. You will also need to select a location **East US** or other close to you to deploy the template to. Then choose **Review + create** followed by **Create**. 
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmaiaacademy%2Fjornada-azureexpert%2Fmain%2FAllFiles%2FTemplates%2Ftemplate.json)
 
@@ -35,7 +35,7 @@ Hands-on Lab
 
 1. On the remote desktop, open Internet Explorer, and go to http://localhost. Confirm that the Parts Unlimited website is successfully running. This site is hosted in IIS in the virtual machine, and connects to an Azure SQL database. Over the course of this exercise, you'll perform a migration assessment on this site and then migrate it to App Service.
 
-1. On the remote VM's desktop, double-click the icon to open the Azure App Service Migration Assistant. The user interface then lists the Migration Assistant's steps with the first step highlighted, **Choose a site.** In the main area, the Migration Assistant informs that it found one site to assess.
+1. On the remote VM's desktop, double-click the icon to open the **Azure App Service Migration Assistant**. The user interface then lists the Migration Assistant's steps with the first step highlighted, **Choose a site.** In the main area, the Migration Assistant informs that it found one site to assess.
 
 1. Select the **Default Web Site** option.
 
@@ -56,8 +56,9 @@ Hands-on Lab
     | Field | Value |
     | --- | ---|
     | Resource Group | Select the **Use exiting option** |
-    | Destination Site Name | Enter a valid name for the destination site |
-    | App Service Plan | Select the **Use exiting option**
+    | Destination Site Name | Enter a valid name for the destination site **apppu####** |
+    | App Service Plan | Select the **Create new**
+    | Region | East US or other
     | Azure Migrate Project | **Leave this field empty**
 
 1. **Select Migrate.** The Migration in Progress screen displays the current status of the migration.
